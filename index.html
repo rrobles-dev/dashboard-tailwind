@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard de rendimiento</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
   </head>
   <body class="bg-slate-100 text-slate-800">
     <header class="bg-slate-900 text-white">
@@ -48,17 +52,25 @@
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <article class="rounded-xl bg-white p-4 shadow">
             <h3 class="mb-2 font-semibold">Comisión por plataforma</h3>
-            <ul class="space-y-1 text-sm">
-              <li class="flex justify-between">
-                <span>Instagram</span><span>1.080 €</span>
-              </li>
-              <li class="flex justify-between">
-                <span>TikTok</span><span>818 €</span>
-              </li>
-              <li class="flex justify-between">
-                <span>YouTube</span><span>652 €</span>
-              </li>
-            </ul>
+            <table
+              class="charts-css bar show-labels data-spacing-4 h-40 text-sm"
+            >
+              <caption>
+                Comisión por plataforma en euros
+              </caption>
+              <tr>
+                <th scope="row">Instagram</th>
+                <td style="--size: 1"><span class="data">1.080 €</span></td>
+              </tr>
+              <tr>
+                <th scope="row">TikTok</th>
+                <td style="--size: 0.76"><span class="data">818 €</span></td>
+              </tr>
+              <tr>
+                <th scope="row">YouTube</th>
+                <td style="--size: 0.6"><span class="data">652 €</span></td>
+              </tr>
+            </table>
           </article>
           <article class="rounded-xl bg-white p-4 shadow">
             <h3 class="mb-2 font-semibold">Ventas por producto</h3>
