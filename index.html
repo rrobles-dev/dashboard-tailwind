@@ -1,24 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de rendimiento</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-slate-100 text-slate-800">
-  <header class="bg-slate-900 text-white">
-    <div class="mx-auto max-w-6xl px-4 py-4 md:flex md:items-center md:justify-between">
-      <h1 class="text-xl font-bold">Dashboard de Camila</h1>
-      <nav aria-label="Secciones del dashboard">
-        <ul class="mt-2 flex gap-4 text-sm md:mt-0">
-          <li><a href="#kpis" class="hover:underline">KPIs</a></li>
-          <li><a href="#drivers" class="hover:underline">Drivers</a></li>
-          <li><a href="#detalle" class="hover:underline">Detalle</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard de rendimiento</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-100 text-slate-800">
+    <header class="bg-slate-900 text-white">
+      <div
+        class="mx-auto max-w-6xl px-4 py-4 md:flex md:items-center md:justify-between"
+      >
+        <h1 class="text-xl font-bold">Dashboard de Camila</h1>
+        <nav aria-label="Secciones del dashboard">
+          <ul class="mt-2 flex gap-4 text-sm md:mt-0">
+            <li><a href="#kpis" class="hover:underline">KPIs</a></li>
+            <li><a href="#drivers" class="hover:underline">Drivers</a></li>
+            <li><a href="#detalle" class="hover:underline">Detalle</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="mx-auto max-w-6xl space-y-8 px-4 py-6">
+      <!-- BLOQUE 1: KPIs -->
+      <section id="kpis" aria-labelledby="titulo-kpis">
+        <h2 id="titulo-kpis" class="mb-4 text-lg font-semibold">
+          Indicadores principales
+        </h2>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <article class="rounded-xl bg-white p-4 shadow">
+            <h3 class="text-sm text-slate-500">Comisiones</h3>
+            <p class="mt-1 text-2xl font-bold">2.550 €</p>
+          </article>
+          <article class="rounded-xl bg-white p-4 shadow">
+            <h3 class="text-sm text-slate-500">Ventas</h3>
+            <p class="mt-1 text-2xl font-bold">235</p>
+          </article>
+          <article class="rounded-xl bg-white p-4 shadow">
+            <h3 class="text-sm text-slate-500">Tasa de conversión</h3>
+            <p class="mt-1 text-2xl font-bold">2,6 %</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
